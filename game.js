@@ -34,7 +34,7 @@ function checkAnswer(currentLevel) {
         setTimeout(function() {
             $("body").removeClass("game-over");
         }, 200)
-        $("#level-title").text("Game Over, Press Any Key to Restart");
+        $("#level-title").text(`Game Over (Max level: ${Math.max(0, level-1)}) Press Any Key to Restart`);
         startOver();
     }
 }
